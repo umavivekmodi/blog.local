@@ -1,0 +1,48 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>open image in new tab using js</title>
+    <script>
+      document
+        .getElementById("ClickOnImage")
+        .addEventListener("click", function () {
+          const imageUrl = this.src;
+          window.open(ImageURl, "_blank");
+        });
+    </script>
+  </head>
+  <body>
+    <img
+      src="/images/ice-cream.jpg"
+      alt="ice-cream"
+      id="ClickOnImage"
+      onclick=" window.open(this.src, '_blank')"
+      width="500"
+      height="500"
+      style="cursor: pointer"
+    />
+  </body>
+</html> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image click</title>
+  </head>
+  <body>
+    <img
+      src="/images/logo2.png"
+      alt="logo"
+      onclick="window.open(this.src,'_blank')"
+      id="logo"
+      style="cursor: pointer"
+    />
+  </body>
+</html>
+<script></script>
