@@ -1,0 +1,28 @@
+/* div * {
+    color: red;
+} */
+
+div p:first-of-type {
+    color: green;
+}
+
+ul li:first-of-type{
+    color: purple;
+}
+
+div.container :first-of-type{
+    color: red;
+    
+}
+
+
+div.container{
+    border: 5px solid black;
+}
+
+
+
+
+
+
+

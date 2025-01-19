@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus-within pesudo element</title>
+    <style>
+
+        .F_withIn{
+            border:2px solid grey;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .F_withIn:focus-within{
+            border-color: blue;
+        }
+    
+    </style>
+  </head>
+  <body>
+    <!-- its use in a container  -->
+    <div class="F_withIn">
+      <label for="name">enter name:</label>
+      <input type="text" placeholder="enter the name" id="name" /><br />
+    </div>
+
+    <div class="F_withIn">
+      <label for="Comment">Enter your comments here:</label>
+      <textarea name="Comment" id="Comment"></textarea>
+    </div>
+  </body>
+</html>

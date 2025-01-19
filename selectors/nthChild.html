@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nth child</title>
+    <style>
+      ul li:nth-child(odd) {
+        color: greenyellow;
+      }
+
+      ul li:nth-child(odd) {
+        color: rgb(184, 14, 167);
+      }
+
+      ol li:nth-last-child(2) {
+        color: brown;
+      }
+/* last hai to last se sru krega  */
+      ol li:nth-of-type(6) {
+        color: green;
+      }
+
+      /*  jo bhi number likhte hai vhi color change krta hai */
+
+      ol li:nth-child(2) {
+        color: purple;
+      }
+
+      /* jo number dete hai vhi color change krta hai */
+
+
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>BlueBerry</li>
+      <li>Apple</li>
+      <li>One Plus+</li>
+      <li>Samsung</li>
+      <li>Vivo</li>
+      <li>Oppo</li>
+    </ul>
+
+    <div>
+      <ol>
+        <li>BlueBerry</li>
+        <li>Apple</li>
+        <li>One Plus+</li>
+        <li>Samsung</li>
+        <li>Vivo</li>
+        <li>Oppo</li>
+      </ol>
+    </div>
+  </body>
+</html>

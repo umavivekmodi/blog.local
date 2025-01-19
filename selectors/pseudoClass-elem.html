@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo classes and elementes</title>
+    <style>
+      button {
+        margin: 50px;
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 3px;
+      }
+
+      button::after {
+        content: " it";
+      }
+
+      button:hover {
+        background-color: green;
+        color: white;
+      }
+
+      ol li::marker {
+        color: darkred;
+      }
+
+      ::selection {
+        background-color: pink;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="submit" value="submit">submit</button>
+
+    <ol>
+      <li>orange</li>
+      <li>grapes</li>
+    </ol>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dicta
+      beatae possimus earum itaque, ut reprehenderit veniam hic eius natus illum
+      sit quae, qui aliquam, maxime inventore. Quaerat, sed nulla.
+    </p>
+  </body>
+</html>

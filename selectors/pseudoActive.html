@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo class of active</title>
+    <style>
+      button {
+        padding: 10px 15px;
+        margin: 40px;
+        border-radius: 5px;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+
+      /* button:active{
+            background-color: blue;
+            color: #fff;
+        } */
+      section{
+        padding: 50px;
+        margin: 20px 0 ;
+        background-color: lightblue;
+        border: 2px solid grey;
+      }
+      section:target {
+        background-color: green;
+        border-color: red;
+      }
+    </style>
+  </head>
+  <body>
+
+
+
+
+
+    <nav id="navBar">
+      <a href="#home">Home</a>
+      <a href="#about">about</a>
+      <a href="#contectUs">contectUS</a>
+    </nav>
+
+    <section id="home"> this is home </section>
+    <section id="about"> this is about</section>
+    <section id="contectUs"> this is contectUS</section>
+    <button>click me</button>
+  </body>
+</html>

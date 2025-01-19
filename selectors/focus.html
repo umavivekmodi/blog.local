@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>focus pesudo element </title>
+    <style>
+      /* input {
+        padding: 10px;
+        border: 2px solid grey;
+        border-radius: 5px;
+        font-size: 16px;
+        outline: none;
+      } */
+
+      input:focus {
+        border-color: blue;
+        background-color: #f0f8ff;
+      }
+      button {
+        background-color: green;
+        color: #fff;
+        font-size: 20px;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 2px;
+      }
+
+      a:focus {
+        color: red;
+        text-decoration: underline;
+        outline: 2px solid orange;
+      }
+      button:focus {
+        color: white;
+        font-weight: bold;
+        padding: 15px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS focus Example</h1>
+
+    <label for="text">enter the full name</label>
+    <input type="text" id="text" placeholder="enter the full name" /><br />
+
+    <label for="text">enter the address name</label>
+    <input
+      type="text"
+      id="text"
+      placeholder="enter the address"
+      autofocus
+    /><br />
+
+    <a href="#"> focus on the a tag ...</a>
+    <button type="submit">submit</button>
+  </body>
+</html>
+
+
+
+
+
+
+

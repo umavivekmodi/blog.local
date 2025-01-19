@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>data type and group selectors</title>
+    <style>
+      [value="age"] {
+        color: red;
+        border: 3px solid green;
+      }
+
+      [name="first_name" s] {
+        color: rgb(255, 0, 200);
+        border: 3px solid rgb(9, 0, 128);
+      }
+
+      strong,
+      em,
+      .last {
+        background-color: grey;
+      }
+
+      /* 
+      [href*="example.com"] {
+        color: chocolate;
+      }
+
+      [href^="https"] {
+        color: green;
+      }
+
+
+      [href$ ='.com'] {
+        color
+      } */
+    </style>
+  </head>
+  <body>
+    <form>
+      <input
+        type="text"
+        name="first_name"
+        value="f_name"
+        placeholder="Enter the first name"
+      /><br />
+      <input
+        type="text"
+        name="last_name"
+        value="l_name"
+        placeholder="Enter the last name"
+      /><br />
+      <input
+        type="number"
+        name="number"
+        value="age"
+        placeholder="Enter the age"
+        max="99"
+      /><br />
+      <a href="https://example.com">https://example.com </a><br />
+      <input type="submit" value="submit" />
+    </form>
+
+    <div>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur
+        <strong> adipisicing elit.</strong> Corporis atque architecto facere ad
+        animi dicta nemo? Neque tempore ab ex.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet <em>consectetur adipisicing</em> elit.
+        Voluptatibus sunt doloremque eos. Consequuntur saepe porro ut? Voluptas
+        illo corrupti error vel aliquid fugiat! Incidunt culpa, adipisci eveniet
+        mollitia repellendus maiores.
+      </p>
+
+      <p class="last">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        molestiae nobis exercitationem, excepturi nulla ex eius quia debitis
+        quam quibusdam sunt perferendis officiis enim totam autem tempora, saepe
+        nostrum delectus.
+      </p>
+    </div>
+  </body>
+</html>

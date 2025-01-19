@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>focus-Visible pesudo Class example</title>
+    <style>
+      input:focus {
+        border-color: blue;
+        background-color: #f0f8ff;
+      }
+      .F_withIn:focus-within {
+        border: 5px solid green;
+        background-color: greenyellow;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      /* Focus style only when keyboard is used */
+      button:focus-visible {
+        outline: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="F_withIn">
+      <label for="name">enter name:</label>
+      <input type="text" placeholder="enter the name" id="name" /><br />
+    </div>
+
+    <div class="F_withIn">
+      <label for="Comment">Enter your comments here:</label>
+      <textarea name="Comment" id="Comment"></textarea>
+    </div>
+
+    <button type="submit">submit</button>
+  </body>
+</html>
