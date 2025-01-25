@@ -1,20 +1,108 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box model</title>
+    <style>
+      p {
+        display: block;
+        width: 100px;
+        height: 50px;
+        padding: 40px;
+        border: 1px solid;
+        width: 500px;
+        /* box-sizing: margin-box; */
+        /* outline: auto; */
+      }
+/* 
+      .box{
+        box-shadow: 50px solid #313131;
+
+      }
+      
+
+      p[data-sizing="intrinsic"] {
+        width: max-content;
+        height: max-content;
+        overflow: auto;
+      } */
+    </style>
+  </head>
+  <body>
+     <div class="box"> -->
+<!-- <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit tenetur
+        maxime atque dignissimos, repudiandae sunt magni doloribus qui explicabo
+        libero. Molestiae rerum iusto non totam fugiat nobis perferendis, sequi -->
+<!-- aspernatur! me atque dignissimos, repudiandae sunt magni doloribus qui
+        explicabo libero. Molestiae rerum iusto non totam fugiat nobis
+        perferendis, sequi aspernatur! -->
+<!-- </p> -->
+<!-- </div> -->
+<!-- </body> -->
+<!-- </html> -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> box model</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
-        p{
-            
-            width: 100px;
-            height: 50px;
-            padding: 20px;
-            border: 1px solid;
-        }
+      div {
+        border: 5px solid black;
+      }
+
+      p .border-box {
+        display: block;
+        margin: 50px;
+        padding: 20px;
+      }
+
+      p .content-box {
+        display: inline;
+        margin: 50px;
+        padding: 20px;
+      }
+
+      article p:first-of-type {
+        color: red;
+        font-size: 1.5em;
+      }
     </style>
-</head>
-<body>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit tenetur maxime atque dignissimos, repudiandae sunt magni doloribus qui explicabo libero. Molestiae rerum iusto non totam fugiat nobis perferendis, sequi aspernatur!</p>
-</body>
+  </head>
+  <body>
+    <div class="border-box">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, quo! Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Et, quo! Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Et, quo! Lorem ipsum dolor
+        sit amet, consectetur adipisicing elit. Et, quo! Lorem ipsum dolor sit
+        amet, consectetur adipisicing elit. Et, quo! Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Et, quo!
+      </p>
+    </div>
+    <br />
+
+    <div class="content-box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, quo!
+      </p>
+    </div>
+    <br />
+
+    <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, eum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, quo!
+      </p>
+    </div>
+
+    <article>
+      <p>I want to be red and larger than the other text.</p>
+      <p>I want to be normal sized and the default color.</p>
+    </article>
+  </body>
 </html>

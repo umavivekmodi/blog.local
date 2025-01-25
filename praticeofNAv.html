@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav bar</title>
+    <style>
+
+.nav-bar {
+   background-color: #ddd;
+   padding: 10px;
+   border-radius: 10px;
+   position: fixed;
+   right: 0;
+   left: 0;
+   top: 0;
+   transition: 0.4s;
+   transform: translateY(-105%);
+   /* transform: translate(-200px); */
+}
+
+.nav-bar:focus-within {
+   transform: translateY(0);
+}
+        
+        /* nav{
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+        } */
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <button>skip to footer</button>
+        <button>skip to main content</button>
+        <button>open accessibility settings</button>
+    </nav>
+    <h4>press the<kdb>tab </kdb> key to navigate to some buttons inside the accessibility bar(which is hidden initially)and likewise, see it side in.</h4>
+</body>
+</html>

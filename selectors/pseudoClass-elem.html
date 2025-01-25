@@ -5,27 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pseudo classes and elementes</title>
     <style>
-      button {
+      button {          /*0  0  1*/
         margin: 50px;
         padding: 20px;
         font-size: 20px;
         border-radius: 3px;
       }
 
-      button::after {
+      button::after {     /*0  0  2*/
         content: " it";
       }
 
-      button:hover {
+      button:hover {    /*0  1  1*/
         background-color: green;
         color: white;
       }
 
-      ol li::marker {
+      ol li::marker {   /*0 0  3*/
         color: darkred;
       }
 
-      ::selection {
+      ::selection {     /* 0 0 1*/
         background-color: pink;
         color: blue;
       }

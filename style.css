@@ -1,24 +1,26 @@
 
 
 header #logo{
-    width: 100;
+    width: 20vh;
     height: 50;
 }
 
 header .container a{
     font-weight: bold;
     color: black;
+    text-decoration: none;
+
 }
 
 
 main h1{
     color: grey;
-    font-size: 40px;
+    font-size: 2em;
 }
 
 img{
-    width: 100px;
-    height: 100px;
+    width: 40%;
+    height: 40%;
 }
 
 h2{
@@ -28,20 +30,31 @@ h2{
 }
 
 p{
-    font-size: 16px;
+    font-size: 3em;
     color: grey;
 }
-
+footer,
+header{
+    height: 50vh;
+    width: 100vw;
+    
+}
 footer img{
     border-radius: 50%;
+    width: 10vh;
+    height: 10vh;
 }
 
 footer a{
     color: #fff;
     text-decoration: none;
+    font-size: 1.5rem;
+   
 }
+
 footer{
     background-color: black;
     color: #fff;
+    font-size: 1.5rem;
 
 }

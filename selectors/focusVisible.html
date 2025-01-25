@@ -6,14 +6,17 @@
     <title>focus-Visible pesudo Class example</title>
     <style>
       input:focus {
+        /*0 1+1 0  */
         border-color: blue;
         background-color: #f0f8ff;
       }
       .F_withIn:focus-within {
+        /*0 1+1 0  */
         border: 5px solid green;
         background-color: greenyellow;
       }
       button {
+        /*0 0 1 */
         padding: 10px 20px;
         font-size: 16px;
         cursor: pointer;
@@ -21,7 +24,13 @@
 
       /* Focus style only when keyboard is used */
       button:focus-visible {
+        /*0  1  1   */
         outline: 2px solid blue;
+      }
+
+      a:focus-visible {
+        background-color: yellowgreen;
+        font-size: 16px;
       }
     </style>
   </head>
@@ -35,6 +44,13 @@
       <label for="Comment">Enter your comments here:</label>
       <textarea name="Comment" id="Comment"></textarea>
     </div>
+
+    <div>
+      <label for="password">enter your passord</label>
+      <input type="password" id="password" />
+    </div>
+
+    <a href="#">link</a>
 
     <button type="submit">submit</button>
   </body>
