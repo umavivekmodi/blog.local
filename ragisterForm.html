@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ragister form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            /* height: 100vh; */
+            width: 100vh;
+            justify-content: center;
+            align-items: center;
+            margin-left: 300px;
+        }
+
+        .form_container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        
+        
+        
+        }
+        
+        .container{
+          
+            background-color: #cdc8c8;
+            margin: 20px;
+            padding: 20px;
+            width: 400px;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-shadow: 2px 2px 8px 8px grey;
+        
+        }
+        input{
+            margin: 10px;
+            padding: 10px;
+            width: 350px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            
+
+        }
+
+        h1{
+            color: #0c0e41;
+            text-align: center;
+        }
+        button[type ="submit"]{
+            margin: 5px;
+            padding: 5px;
+            align-items: center;
+            margin-left: 150px;
+            border: 1px solid black;
+            width: 80px;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+        }
+
+      
+
+        .link_container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-size: bold;
+    
+        }
+
+        .link a{
+            color: #000;
+            text-decoration: none;
+            margin: 5px;
+            margin-bottom: 250px;
+            padding: 10px;
+        }
+
+        button{
+            padding: 5px;
+            margin: 5px;
+            margin-left: 20px;
+            margin-bottom: 250;
+            border: none ;
+            border-radius: 2px;
+            width: 80px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            cursor: pointer;
+
+        }
+
+
+       
+
+        button:hover{
+            background-color: #313131;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <form action="login_form.html" >
+        <div class="form_container">
+        <div class="container">
+            <h1>Create a new account</h1>
+
+            <label for="FullName"></label>
+            <input type="text" id="name"  placeholder="Name"><br/>
+
+            <label for="userName"></label>
+            <input type="text" id="uName"  placeholder="username"><br/>
+
+            <label for="phone"></label>
+            <input type="tel" id="phone" placeholder="Phone Number"><br/>
+
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="email"><br/>
+
+            <label for="password"></label>
+            <input type="password" name="password" id="password" placeholder="password"><br/>
+
+            <label for="confirm_password"></label>
+            <input type="password" name="password" id="confirm_password" placeholder="confirm Password"><br/>
+
+            <button type="submit" value="submit">Submit</button>
+            
+            <div class="link_container">
+                <div class="link">
+                    <a href="#">Already have account?</a>
+                </div>
+                <div class="button_Log">
+                    <button>Login</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </form>
+    
+</body>
+</html>
